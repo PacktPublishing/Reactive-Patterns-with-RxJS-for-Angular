@@ -1,0 +1,69 @@
+<ng-container *ngIf="valueChanges$ | async"></ng-container>
+<h1>New Recipe</h1>
+<form [formGroup]="recipeForm">
+
+  <div class="form-row">
+    <div class=" col-4">
+      <label for="title">Title</label>
+      <input type="text" name="Title" formControlName="title">
+    </div>
+
+    <div class=" col-3">
+      <label for="Ingredients">Ingredients</label>
+      <input type="text" name="Ingredients" formControlName="ingredients">
+    </div>
+    <div class=" col">
+      <i class="pi pi-plus" style="padding-top:40px; font-size: 1rem"></i>
+    </div>
+
+    <div class=" col-4">
+      <label for="Tags">Tags</label>
+      <div *ngFor="let tag of tags">
+        <p-radioButton [inputId]="tag.key" [value]="tag" formControlName="tags"></p-radioButton>
+        <label class="recipe-tag" [for]="tag.key">{{tag.name}}</label>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="col-4">
+      <label for="ImageUrl">ImageUrl</label>
+      <input type="text" name="imageUrl" formControlName="imageUrl">
+    </div>
+
+    <div class="col-3">
+      <label for="cookingTime">CookingTime</label>
+      <input type="text" name="cookingTime" formControlName="cookingTime">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="col-4">
+      <label for="yield">Yield</label>
+      <input type="text" name="yield" formControlName="yield">
+    </div>
+
+    <div class="col-3">
+      <label for="prepTime">Preparation Time</label>
+      <input type="text" name="prepTime" formControlName="prepTime">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+
+    <div class="col-12">
+      <label for="steps">Steps</label>
+      <textarea name="steps" formControlName="steps"></textarea>
+    </div>
+  </div>
+
+
+</form>
+
+<div class="right-actions-panel">
+  <p-button class="recipe-button" routerLink='' label="Cancel"></p-button>
+  <!-- <p-button class="recipe-button" routerLink='' label="Save"></p-button> -->
+</div>

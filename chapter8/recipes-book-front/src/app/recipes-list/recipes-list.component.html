@@ -1,0 +1,28 @@
+<div class="rp-data-view" *ngIf="filtredRecipes$ |async as recipes" class="card">
+    <p-dataView #dv [value]="recipes" [paginator]="true" [rows]="9" filterBy="name" layout="grid">
+        <ng-template let-recipe pTemplate="gridItem">
+            <div class="p-col-12 p-md-3">
+                <div style="cursor: pointer;" class="recipe-grid-item card">
+                    <div class="recipe-grid-item-top">
+                        <div>
+                            <i class="pi pi-tag recipe-category-icon"></i>
+                            <span class="recipe-category">{{recipe.category}}</span>
+                        </div>
+                    </div>
+                    <div class="recipe-grid-item-content">
+                        <img class="recipe-image" [src]="'assets/recipes/'+ recipe.imageUrl" [alt]="recipe.title" />
+                        <div class="recipe-name">{{recipe?.title}}</div>
+                        <div class="recipe-description">{{recipe?.title}}</div>
+                        <p-rating class="recipe-rating" [ngModel]="recipe.rating" [cancel]="false"
+                            (onRate)="onRating($event,recipe)" (onCancel)="onCancelRating(recipe)">
+                        </p-rating>
+                    </div>
+                    <div class="recipe-grid-item-bottom">
+                        <span class="recipe-prep-time">{{recipe?.prepTime}}min</span>
+                        <p-button class="recipe-favourite" icon="pi pi-heart"></p-button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-dataView>
+</div>
