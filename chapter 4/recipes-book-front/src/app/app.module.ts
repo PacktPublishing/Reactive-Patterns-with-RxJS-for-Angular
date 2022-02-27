@@ -16,11 +16,14 @@ import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
     RecipesListComponent,
     HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonModule,
     RippleModule,
     RatingModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [RecipesService],
   bootstrap: [AppComponent]

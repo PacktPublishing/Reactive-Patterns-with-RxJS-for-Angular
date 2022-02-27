@@ -1,6 +1,6 @@
 <div *ngIf="recipes$ | async as recipes" class="card">
-    <p-dataView #dv [value]="recipes" [paginator]="true" [rows]="9" filterBy="name"
-         layout="grid">
+    <div>{{recipes.length}} Results</div>
+    <p-dataView #dv [value]="recipes" [paginator]="true" [rows]="9" filterBy="name" layout="grid">
         <ng-template let-recipe pTemplate="gridItem">
             <div class="p-col-12 p-md-3">
                 <div class="recipe-grid-item card">
@@ -11,10 +11,11 @@
                         </div>
                     </div>
                     <div class="recipe-grid-item-content">
-                        <img class="recipe-image" [src]="'assets/recipes/'+ recipe.imageUrl" [alt]="recipe.title"/>
+                        <img class="recipe-image" [src]="'assets/recipes/'+ recipe.imageUrl" [alt]="recipe.title" />
                         <div class="recipe-name">{{recipe?.title}}</div>
                         <div class="recipe-description">{{recipe?.title}}</div>
-                        <p-rating class="recipe-rating" [ngModel]="recipe.rating" [readonly]="true" [cancel]="false"></p-rating>
+                        <p-rating class="recipe-rating" [ngModel]="recipe.rating" [readonly]="true" [cancel]="false">
+                        </p-rating>
                     </div>
                     <div class="recipe-grid-item-bottom">
                         <span class="recipe-prep-time">{{recipe?.prepTime}}min</span>
@@ -24,3 +25,4 @@
             </div>
         </ng-template>
     </p-dataView>
+</div>

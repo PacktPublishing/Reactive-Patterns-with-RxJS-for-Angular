@@ -40,3 +40,27 @@ a {
   background-color: #f71e68;
   top: 0px;
 }
+
+
+.right-zone {
+  float: right;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.left-zone {
+  float: left;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+
+.header-menu-item button.p-button {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+
+.logo {
+  width: 39.6px;
+  height: 39.6px;
+}

@@ -1,6 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { from, of, throwError, timer } from 'rxjs';
-import { catchError, delayWhen, map, retry, retryWhen, tap } from 'rxjs/operators';
 import { RecipesService } from '../core/services/recipes.service';
 
 @Component({
