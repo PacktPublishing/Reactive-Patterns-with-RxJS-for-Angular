@@ -1,0 +1,228 @@
+[
+  {
+    "id": 1,
+    "title": "Lemon cake",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "lemon-cake.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Lemon Pie",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "lemon-pie.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Tortilla Wrap",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "rating": 3,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "tortilla-wrap.jpg"
+
+  },
+  {
+    "id": 4,
+    "title": "Delicious Kebab",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "rating": 3,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "kebab.PNG"
+
+  },
+  {
+    "id":5,
+    "title": "Chilli Chicken",
+    "prepTime": "10",
+    "cookTime": "35",
+    "rating": 3,
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "chicken.jpg"
+
+  },
+  {
+    "id": 6,
+    "title": "Cookies",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "rating": 3,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "cookies.PNG"
+
+  },
+  {
+    "id": 7,
+    "title": "CheeseBurger",
+    "prepTime": "10",
+    "cookTime": "35",
+    "rating": 3,
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "burger.PNG"
+
+  },
+  {
+    "id": 8,
+    "title": "Chilli Chicken",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "rating": 3,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "chicken.jpg"
+
+  },
+  {
+    "id": 9,
+    "title": "Lemon cake",
+    "prepTime": "10",
+    "cookTime": "35",
+    "rating": 3,
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "lemon-cake.jpg"
+
+  },
+  {
+    "id": 10,
+    "title": "Lemon pie",
+    "prepTime": "10",
+    "cookTime": "35",
+    "rating": 3,
+    "servings": 10,
+    "ingredients": ["1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "lemon-pie.jpg"
+
+  },
+  {
+    "id": 11,
+    "title": "Chilli chicken",
+    "prepTime": "10",
+    "cookTime": "35",
+    "servings": 10,
+    "ingredients": [" 1 cup white sugar", "½ cup butter", "2 eggs", "2 teaspoons vanilla extract",
+    "1 ½ cups all-purpose flour","1 ¾ teaspoons baking powder",
+    "¾ cup milk",
+    "1 tablespoon lemon zest",
+    "1 tablespoon lemon juice"
+    ],
+    "steps": ["Step 1:Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan", 
+    "Step 2: Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract",
+    "Step 3: Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan.",
+    "Step 4: Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes."
+    ],
+    "imageUrl": "chicken.jpg"
+
+  }
+]
