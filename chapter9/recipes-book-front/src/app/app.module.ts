@@ -31,8 +31,7 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     HeaderComponent,
     HomeComponent,
     RecipesFilterComponent,
-    RecipeCreationComponent,
-    RecipeDetailsComponent,
+    RecipeCreationComponent
   ],
   imports: [
     BrowserModule,
