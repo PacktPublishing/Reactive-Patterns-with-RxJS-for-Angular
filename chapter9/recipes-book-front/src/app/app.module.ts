@@ -22,7 +22,6 @@ import { RecipeCreationComponent } from './recipe-creation/recipe-creation.compo
 import { AppRoutingModule } from './app-routing.module';
 import {MenubarModule} from 'primeng/menubar';
 import {RadioButtonModule} from 'primeng/radiobutton';
-import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 @NgModule({
   declarations: [
