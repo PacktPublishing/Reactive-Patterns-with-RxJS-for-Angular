@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="right-zone">
+        <p-button class="header-menu-item" routerLink='recipes/create' label="My recipes"></p-button>
+        <p-button class="header-menu-item" routerLink='recipes/create' label="My favourites"></p-button>
+        <p-button class="header-menu-item" routerLink='recipes/create' label="New Recipe"></p-button>
+        <i class="pi pi-user" style="font-size: 1.3rem;color: #fff; margin-bottom:12px; margin-left:40px"></i>
+    </div>
+    <!-- <div *ngIf="selectedRecipe$ | async; let recipe">
+        <span> {{recipe.title}} </span>
+    </div>     -->
+    <div class="left-zone">    
+        <p-button class="header-menu-item" routerLink='' label="Recipes Book"></p-button>
+        <img class="logo" [src]="'assets/recipes/chef.png'" />
+    </div>
+</div>
