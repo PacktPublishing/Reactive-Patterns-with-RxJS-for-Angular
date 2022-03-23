@@ -16,8 +16,9 @@ export class RecipesListComponent implements OnInit {
   /* The readonly stream */
   filterRecipesAction$ = this.service.filterRecipesAction$;
   filtredRecipes$ = combineLatest([this.recipes$, this.filterRecipesAction$]).pipe(
-    map(([recipes, filter]: [Recipe[], any]) => {
-      return recipes.filter(recipe => recipe.title?.indexOf(filter.title) != -1)
+    map(([recipes, filter]: [Recipe[], Recipe]) => {
+      return recipes.filter(recipe => recipe.title?.toLowerCase()
+      .indexOf(filter?.title?.toLowerCase() ?? '') != -1)
     })
   );
 
@@ -36,7 +37,7 @@ export class RecipesListComponent implements OnInit {
   }
   editRecipe(recipe: Recipe) {
     console.log(recipe)
- } 
+  }
 
 
 }

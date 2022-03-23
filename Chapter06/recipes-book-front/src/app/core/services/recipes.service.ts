@@ -12,14 +12,13 @@ const BASE_PATH = environment.basePath
 export class RecipesService {
 
   recipes$ = this.http.get<Recipe[]>(`${BASE_PATH}/recipes`);
-  private filterRecipeSubject = new BehaviorSubject<any>({ title: '' });
+  private filterRecipeSubject = new BehaviorSubject<Recipe>({title: '' });
   filterRecipesAction$ = this.filterRecipeSubject.asObservable();
 
   constructor(private http: HttpClient) { }
 
-  updateFilter(criteria: any) {
+  updateFilter(criteria: Recipe) {
     this.filterRecipeSubject.next(criteria);
   }
-
 }
 

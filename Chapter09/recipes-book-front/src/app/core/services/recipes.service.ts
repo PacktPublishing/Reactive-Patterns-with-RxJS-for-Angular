@@ -16,12 +16,12 @@ export class RecipesService {
 
   recipes$ = this.getRecipesList();
 
-  private filterRecipeSubject = new BehaviorSubject<any>({ title: '' });
+  private filterRecipeSubject = new BehaviorSubject<Recipe>({ title: '' });
   filterRecipesAction$ = this.filterRecipeSubject.asObservable();
 
   constructor(private http: HttpClient) { }
 
-  updateFilter(criteria: any) {
+  updateFilter(criteria: Recipe) {
     this.filterRecipeSubject.next(criteria);
   }
 
