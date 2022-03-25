@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { webSocket } from 'rxjs/webSocket';
-import { environment } from '../../environments/environment';
+import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
+import { environment } from '../../../environments/environment';
 import { Observable, timer, Subject, EMPTY } from 'rxjs';
 import { retryWhen, tap, delayWhen, switchAll, catchError } from 'rxjs/operators';
 export const WS_ENDPOINT = environment.wsEndpoint;
