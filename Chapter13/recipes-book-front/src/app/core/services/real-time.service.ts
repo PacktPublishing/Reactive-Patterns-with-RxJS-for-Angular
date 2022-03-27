@@ -10,11 +10,11 @@ export const RECONNECT_INTERVAL = environment.reconnectInterval;
   providedIn: 'root'
 })
 export class RealTimeService {
-  private socket$: WebSocketSubject<string>;
-  private messagesSubject$ = new Subject();
+  private socket$!: WebSocketSubject<string>|undefined;
+  private messagesSubject$ = new Subject<Observable<string>>();
   public messages$ = this.messagesSubject$.pipe(switchAll(), catchError(e => { throw e }));
 
-  private getNewWebSocket() {
+  private getNewWebSocket():WebSocketSubject<string> {
     return webSocket({
       url: WS_ENDPOINT,
       closeObserver: {
@@ -28,10 +28,10 @@ export class RealTimeService {
   }
 
   sendMessage(msg: string) {
-    this.socket$.next(msg);
+    this.socket$?.next(msg);
   }
   close() {
-    this.socket$.complete();
+    this.socket$?.complete();
   }
 
   public connect(cfg: { reconnect: boolean } = { reconnect: false }): void {
