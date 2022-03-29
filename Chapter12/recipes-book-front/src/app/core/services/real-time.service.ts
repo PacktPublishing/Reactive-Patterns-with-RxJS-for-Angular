@@ -52,7 +52,7 @@ export class RealTimeService {
 
 
 
-  private reconnect(observable: Observable<any>): Observable<any> {
+  private reconnect(observable: Observable<Message>): Observable<Message> {
     return observable.pipe(retryWhen(errors => errors.pipe(tap(val => console.log('[Data Service] Try to reconnect', val)),
       delayWhen(_ => timer(RECONNECT_INTERVAL)))));
   }
