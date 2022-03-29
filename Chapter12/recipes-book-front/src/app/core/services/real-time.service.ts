@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 import { environment } from '../../../environments/environment';
-import { Observable, timer, Subject, EMPTY } from 'rxjs';
+import { Observable, timer, EMPTY, BehaviorSubject } from 'rxjs';
 import { retryWhen, tap, delayWhen, switchAll, catchError } from 'rxjs/operators';
+import { Message } from '../model/message.model';
 export const WS_ENDPOINT = environment.wsEndpoint;
 export const RECONNECT_INTERVAL = environment.reconnectInterval;
 
@@ -10,11 +11,12 @@ export const RECONNECT_INTERVAL = environment.reconnectInterval;
   providedIn: 'root'
 })
 export class RealTimeService {
-  private socket$!: WebSocketSubject<string>|undefined;
-  private messagesSubject$ = new Subject<Observable<string>>();
+
+  private socket$!: WebSocketSubject<Message> | undefined;
+  private messagesSubject$ = new BehaviorSubject<Observable<Message>>(EMPTY);
   public messages$ = this.messagesSubject$.pipe(switchAll(), catchError(e => { throw e }));
 
-  private getNewWebSocket():WebSocketSubject<string> {
+  public getNewWebSocket(): WebSocketSubject<Message> {
     return webSocket({
       url: WS_ENDPOINT,
       closeObserver: {
@@ -27,7 +29,9 @@ export class RealTimeService {
     })
   }
 
-  sendMessage(msg: string) {
+
+
+  sendMessage(msg: Message) {
     this.socket$?.next(msg);
   }
   close() {
@@ -41,10 +45,11 @@ export class RealTimeService {
       const messages = this.socket$.pipe(cfg.reconnect ? this.reconnect : o => o,
         tap({
           error: error => console.log(error),
-        }), catchError(_ => EMPTY))
+        }), catchError(_ => EMPTY));
       this.messagesSubject$.next(messages);
     }
   }
+
 
 
   private reconnect(observable: Observable<any>): Observable<any> {

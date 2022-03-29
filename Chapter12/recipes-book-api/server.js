@@ -28,15 +28,16 @@ wss.on('connection', ws => {
   ws.on('error', error => {
     OnError(error);
   });
-   ws.on('close', ws=> {
+  ws.on('close', ws => {
     onClose();
-})
+  })
 
 });
 
 function onConnection(ws) {
   console.log(`Connection Established. Listenning on ${wss.options.port}`);
-  ws.send(JSON.stringify({ "type": "message", "data": "Message from the socket" }));
+  ws.send(JSON.stringify({ key: "key", message: "messageFromTheSocket" }));
+
   if (!timerId) {
     startTimer(ws);
   }
@@ -57,6 +58,6 @@ function onMessage(message, ws) {
 
 function startTimer(ws) {
   timerId = setInterval(() => {
-      ws.send(JSON.stringify({ "type": "message", "data": "Message from the socket" }));
-    }, 1000);
+    ws.send(JSON.stringify({ key: "key", message: "messageFromTheSocket" }));
+  }, 1000);
 }
