@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { UploadStatus } from '../model/upload.status.model';
 const BASE_PATH = environment.basePath
 
 @Injectable({
@@ -16,10 +17,10 @@ export class UploadRecipesPreviewService {
    * @param fileToUpload 
    * @returns 
    */
-  upload(code: string, fileToUpload?: File): Observable<any> {
+  upload(code: string, fileToUpload?: File): Observable<UploadStatus> {
     const formData = new FormData()
-    formData.append('fileToUpload', fileToUpload as any)
-    return this.http.post<any>(
+    formData.append('fileToUpload', fileToUpload as File)
+    return this.http.post<UploadStatus>(
       `${BASE_PATH}/recipes/upload/${code}`,
       formData
     )

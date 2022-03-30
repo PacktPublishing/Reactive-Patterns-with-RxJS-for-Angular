@@ -45,11 +45,11 @@ export class RecipeCreationComponent {
     console.log('Saved successfully');
   }
 
-  onUpload(event: any) {
-    this.uploadedFilesSubject$.next(event.files);
+  onUpload(files: File[]) {
+    this.uploadedFilesSubject$.next(files);
   }
 
-  private calculateProgressPercentage(completedRequests: number, totalRequests: any) {
+  private calculateProgressPercentage(completedRequests: number, totalRequests: number) {
     this.uploadProgress = (completedRequests/totalRequests)*100;
   }
 
