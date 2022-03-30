@@ -51,11 +51,11 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
-| 1-13     | Angular 12                          | Windows, Mac OS X, and Linux       |
-| 1-13     | TypeScript 4.3.2                    | Windows, Mac OS X, and Linux       |
-| 1-13     | RxJS 7                              | Windows, Mac OS X, and Linux       |
-| 1-13     | primeng 12                          | Windows, Mac OS X, and Linux       |
-| 1-13     | Bootstrap 3.3.7                     | Windows, Mac OS X, and Linux       |
+| 1-13     | Angular 12 and above                | Windows, Mac OS X, and Linux       |
+| 1-13     | TypeScript 4.3.2 and above          | Windows, Mac OS X, and Linux       |
+| 1-13     | RxJS 7 and above                    | Windows, Mac OS X, and Linux       |
+| 1-13     | primeng 12 and above                | Windows, Mac OS X, and Linux       |
+| 1-13     | Bootstrap 3.3.7 and above           | Windows, Mac OS X, and Linux       |
 
 
 
