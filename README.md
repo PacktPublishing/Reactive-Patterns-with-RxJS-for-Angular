@@ -67,6 +67,10 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Angular Cookbook [[Packt]](https://www.packtpub.com/product/angular-cookbook/9781838989439?utm_source=github&utm_medium=repository&utm_campaign=9781838989439) [[Amazon]](https://www.amazon.com/dp/1838989439)
 
+## Errata 
+ * Page 130 (Paragraph 2 line 2):  **Then, for every emission, we use the concatMap operator to transform the value to the** _should be_ **Then, for every emission, we use the switchMap operator to transform the value to the**
+ * Page 82-84 (Throughout the code examples): **filtredRecipes** _should be_ **filteredRecipes**
+ 
 ## Get to Know the Author
 **Lamis Chebbi**
 is an enthusiastic software engineer with a strong passion for the modern web. She's the founder of "Angular Tunisia", a member of the WWCode Community, speaker, content creator, and trainer. She has been into Angular for the past few years and loves to share her knowledge about Angular through participating in workshops and organizing training sessions. ng-girls is one of the communities she supports. Empowering women and students is one of her highest priorities. Besides Angular and the web, Lamis loves Music, traveling, chromotherapy and volunteering. Last but not least, she's a forever student.
